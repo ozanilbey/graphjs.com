@@ -33,7 +33,10 @@
 	    <link rel="apple-touch-icon" href="assets/images/identity/icon_touch.png">
 		<link href="assets/styles/reset.css" type="text/css" rel="stylesheet" />
 		<link href="assets/styles/style.css" type="text/css" rel="stylesheet" />
+		<link href="assets/styles/highlight.css" type="text/css" rel="stylesheet" />
 		<script src="assets/scripts/script.js"></script>
+		<style>
+		</style>
 	</head>
 	<body>
 		<nav>
@@ -43,9 +46,9 @@
 		</nav>
 		<header>
 			<div class="container">
-				<img class="hero" src="assets/images/illustrations/network.png" />
+				<img class="hero" src="http://res.cloudinary.com/graphjs/image/upload/graphjs.com/illustrations/network.png" />
 				<h1>Make any website social</h1>
-				<p>with just a couple lines of code.</p>
+				<p>with just a few lines of code.</p>
 			</div>
 		</header>
 		<main>
@@ -53,25 +56,16 @@
 				<section class="introduction">
 					<code class="major">
 <!-- Code begins -->
-<xmp><script src="pho.js"></script>
+<pre class="prettyprint lang-html linenums"><xmp><script src="pho.js"></script>
 <script>
-	//Initiate with your ID
-	Pho.init("16D58CF2-FD88-4A49-972B-6F60054B");
-</script></xmp>
+  //Initiate with your ID
+  Pho.init("16D58CF2-FD88-4A49-972B-6F60054BF023");
+</script></xmp></pre>
 <!-- Code ends -->
 					</code>
-					<button>Copy to Start</button>
+					<button style="display:none;">Start Yours</button>
 				</section>
 				<section class="information">
-					<div class="preview">
-						<div class="slider" data-simple-slider>
-							<img src="assets/images/content/auth-state_standalone.png" />
-							<img src="assets/images/content/auth-state_inline.png" />
-							<img src="assets/images/content/auth-register.png" />
-							<img src="assets/images/content/auth-login.png" />
-							<img src="assets/images/content/alert.png" />
-						</div>
-					</div>
 					<div class="code">
 						<h3>
 							Add login and logout
@@ -80,43 +74,24 @@
 						</h3>
 						<code>
 <!-- Code begins -->
-<xmp>//Login Box
-<graphjs-auth default="login">
+<pre class="prettyprint lang-html linenums"><xmp><!-- Login Box -->
+<graphjs-auth default="login" />
 
-//Authentication State
-<graphjs-state></xmp>
+<!-- Authentication State -->
+<graphjs-state /></xmp></pre>
 <!-- Code ends -->
-						</code>
-					</div>
-				</section>
-				<!-- GROUPS
-				<section class="information">
-					<div class="code">
-						<h3>
-							Create groups and
-							<br />
-							embed members widget!
-						</h3>
-						<code>
-
-<xmp><graphjs-group-members>
-	<graphjs-profile-card id="7346217961" />
-	<graphjs-profile-card id="8768732124" />
-	<graphjs-profile-card id="1236217836" />
-</graphjs-group-members></xmp>
-
 						</code>
 					</div>
 					<div class="preview">
 						<div class="slider" data-simple-slider>
-							<img src="assets/images/content/auth-state_inline.png" />
-							<img src="assets/images/content/auth-state_standalone.png" />
-							<img src="assets/images/content/auth-register.png" />
-							<img src="assets/images/content/auth-login.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/auth-state_standalone.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/auth-state_inline.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/auth-register.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/auth-login.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/alert.png" />
 						</div>
 					</div>
 				</section>
-				-->
 				<section class="information">
 					<div class="code">
 						<h3>
@@ -124,33 +99,27 @@
 						</h3>
 						<code>
 <!-- Code begins -->
-<xmp><script>
-	Pho.setProfile(
-		'KarenMorgan',
-		'karenmorgan@geemail.com',
-		'I am a badass UX designer working in tech.',
-		'06/10/1990'
-	);
-</script></xmp>
+<pre class="prettyprint lang-html linenums"><xmp><script>
+  Pho.setProfile(
+    'KarenMorgan',
+    'karenmorgan@geemail.com',
+    'I am a badass UX designer!',
+    '06/10/1990',
+    'http://url-to-avatar.com/avatar.png'
+  );
+</script></xmp></pre>
 <!-- Code ends -->
 						</code>
 					</div>
 					<div class="preview">
 						<div class="slider" data-simple-slider>
-							<img src="assets/images/content/profile_introduction.png" />
-							<img src="assets/images/content/profile-card.png" />
-							<img src="assets/images/content/profile.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/profile_introduction.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/profile-card.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/profile.png" />
 						</div>
 					</div>
 				</section>
 				<section class="information">
-					<div class="preview">
-						<div class="slider" data-simple-slider>
-							<img src="assets/images/content/comments_introduction.png" />
-							<img src="assets/images/content/comments_inline.png" />
-							<img src="assets/images/content/comments_standalone.png" />
-						</div>
-					</div>
 					<div class="code">
 						<h3>
 							Add comment section
@@ -159,9 +128,15 @@
 						</h3>
 						<code>
 <!-- Code begins -->
-<xmp><graphjs-comments max="20"></xmp>
+<pre class="prettyprint lang-html linenums"><xmp><graphjs-comments max="20" /></xmp></pre>
 <!-- Code ends -->
 						</code>
+					</div>
+					<div class="preview">
+						<div class="slider" data-simple-slider>
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/comments_introduction.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/comments_inline.png" />
+						</div>
 					</div>
 				</section>
 				<section class="information">
@@ -171,35 +146,34 @@
 						</h3>
 						<code>
 <!-- Code begins -->
-<xmp><graphjs-messages /></xmp>
+<pre class="prettyprint lang-html linenums"><xmp><graphjs-messages /></xmp></pre>
 <!-- Code ends -->
 						</code>
 					</div>
 					<div class="preview">
 						<div class="slider" data-simple-slider>
-							<img src="assets/images/content/messages_introduction.png" />
-							<img src="assets/images/content/messages_mobile.png" />
-							<img src="assets/images/content/messages.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/messages_introduction.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/messages_mobile.png" />
 						</div>
 					</div>
 				</section>
 				<section class="information">
-					<div class="preview">
-						<div class="slider" data-simple-slider>
-							<img src="assets/images/content/forum-list.png" />
-							<img src="assets/images/content/forum-thread.png" />
-							<img src="assets/images/content/forum-compose.png" />
-						</div>
-					</div>
 					<div class="code">
 						<h3>
 							Create a community forum!
 						</h3>
 						<code>
 <!-- Code begins -->
-<xmp><graphjs-forum /></xmp>
+<pre class="prettyprint lang-html linenums"><xmp><graphjs-forum /></xmp></pre>
 <!-- Code ends -->
 						</code>
+					</div>
+					<div class="preview">
+						<div class="slider" data-simple-slider>
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/forum-list.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/forum-thread.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/forum-compose.png" />
+						</div>
 					</div>
 				</section>
 				<section class="information">
@@ -211,19 +185,19 @@
 						</h3>
 						<code>
 <!-- Code begins -->
-<xmp>//Buttons on any page
-<graphjs-bookmark-button />
+<pre class="prettyprint lang-html linenums"><xmp><!-- Buttons on any page -->
+<graphjs-star-button type="love" />
 
-//List favorite site content
-<graphjs-bookmark-list type="global" />
-</xmp>
+<!-- List favorite site content -->
+<graphjs-star-list />
+</xmp></pre>
 <!-- Code ends -->
 						</code>
 					</div>
 					<div class="preview">
 						<div class="slider" data-simple-slider>
-							<img src="assets/images/content/bookmark-list_global-introduction.png" />
-							<img src="assets/images/content/bookmark-button.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/star-list_global-introduction.png" />
+							<img src="http://res.cloudinary.com/graphjs/image/upload/c_scale,h_460,w_460/graphjs.com/content/star-button.png" />
 						</div>
 					</div>
 				</section>
@@ -238,26 +212,32 @@
 						</div>
 						<div id="views">
 <!-- Code begins -->
-<xmp class="active"><script src="pho.js"></script>
+<pre class="active prettyprint lang-html linenums"><xmp><script src="pho.js"></script>
 <script>
-	//Initiate with your ID
-	Pho.init("26D58CF2-FD88-4A49-972B-6F60054B");
-</script></xmp>
-<xmp><script src="pho.js"></script>
+  //Initiate with your ID
+  Pho.init("26D58CF2-FD88-4A49-972B-6F60054B");
+</script></xmp></pre>
+<!-- Code ends -->
+<!-- Code begins -->
+<pre class="prettyprint lang-html linenums"><xmp><script src="pho.js"></script>
 <script>
-	//Initiate with your ID
-	Pho.init("36D58CF2-FD88-4A49-972B-6F60054B");
-</script></xmp>
-<xmp><script src="pho.js"></script>
+  //Initiate with your ID
+  Pho.init("36D58CF2-FD88-4A49-972B-6F60054B");
+</script></xmp></pre>
+<!-- Code ends -->
+<!-- Code begins -->
+<pre class="prettyprint lang-html linenums"><xmp><script src="pho.js"></script>
 <script>
-	//Initiate with your ID
-	Pho.init("46D58CF2-FD88-4A49-972B-6F60054B");
-</script></xmp>
-<xmp><script src="pho.js"></script>
+  //Initiate with your ID
+  Pho.init("46D58CF2-FD88-4A49-972B-6F60054B");
+</script></xmp></pre>
+<!-- Code ends -->
+<!-- Code begins -->
+<pre class="prettyprint lang-html linenums"><xmp><script src="pho.js"></script>
 <script>
-	//Initiate with your ID
-	Pho.init("56D58CF2-FD88-4A49-972B-6F60054B");
-</script></xmp>
+  //Initiate with your ID
+  Pho.init("56D58CF2-FD88-4A49-972B-6F60054B");
+</script></xmp></pre>
 <!-- Code ends -->
 						</div>
 					</code>
@@ -265,11 +245,16 @@
 			</div>
 		</main>
 		<section class="promotion">
-			<h2>Join our private beta!</h2>
-			<p>Leave your email to be a beta tester.</p>
-			<form>
-				<input type="text" placeholder="Your email address">
-			</form>
+			<div class="container">
+				<h2>Join our private beta!</h2>
+				<p>Leave your email to be a beta tester.</p>
+				<form action="https://formspree.io/business@groups-inc.com" method="POST">
+					<input type="text" name="_replyto" placeholder="Your email address">
+					<button type="submit">
+						<img src="assets/images/icons/send.svg" />
+					</button>
+				</form>
+			</div>
 		</section>
 		<section class="indication">
 			<div class="container">
@@ -277,7 +262,7 @@
 					<img class="logo" src="assets/images/identity/logo.svg">
 					<p>is proudly open source.</p>
 				</div>
-				<div class="note">
+				<div class="note" style="display:none;">
 					<img class="logo" src="assets/images/external/opensource-logo.svg">
 					<p>
 						Built on top of the robust Gaza Framework.
@@ -289,13 +274,12 @@
 		</section>
 		<footer>
 			<div class="container">
-				built with love by GROU.PS Inc.
+				built with love by <a href="http://www.groups-inc.com" target="_blank">GROU.PS Inc.</a>
 			</div>
 		</footer>
-		<script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+		<script src="assets/scripts/slider.js"></script>
 		<script>
 			var sliders = document.getElementsByClassName('slider');
-			console.log(sliders);
 			for(i = 0; i < sliders.length; i++) {
 				simpleslider.getSlider({
 					container: sliders[i],
@@ -308,5 +292,6 @@
 				});
 			}
 		</script>
+		<script src="assets/scripts/syntax.js?lang=html"></script>
 	</body>
 </html>
